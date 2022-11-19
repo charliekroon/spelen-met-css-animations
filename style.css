@@ -3,3 +3,47 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	text-align: center;
+	margin-top: 50%;
+	margin-bottom: -100%;
+	display: inline-block;
+	position: relative;
+	width: 20%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+@keyframes walkanim {
+	to {
+		background-position: 100% 0;
+	}
+}
+
+#leg-left {
+	animation: leg-left 2s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+#walking-dog-girl {
+	animation: walking-dog-girl 30s linear infinite;
+}
+
+/* @keyframes leg-left {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(20deg);
+	}
+} */
+
+@keyframes walking-dog-girl {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(500%);
+	}
+}
