@@ -8,16 +8,13 @@ body {
 	margin-top: 20%;
 }
 
-#wheel-front {
-	animation: wheel 1s ease;
-	transform-origin: center;
-	transform-box: fill-box;
-}
+#wheel-front,
 #wheel-back {
-	animation: wheel 1s ease;
+	animation: wheel 1s infinite linear;
 	transform-origin: center;
 	transform-box: fill-box;
 }
+
 @keyframes wheel {
 	from {
 		transform: rotateZ(0deg);
