@@ -1,18 +1,22 @@
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 body {
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 12%;
 }
 
 #wheel-front,
 #wheel-back {
-	animation: wheel 1s infinite linear;
+	animation: wheel 2s infinite linear;
 	transform-origin: center;
 	transform-box: fill-box;
+}
+
+#girl-bike,
+#hair {
+	animation: girl-bike 1s ease-in-out infinite alternate;
+	transform-origin: bottom;
 }
 
 @keyframes wheel {
@@ -21,5 +25,14 @@ body {
 	}
 	to {
 		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes girl-bike {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform: rotateX(15deg);
 	}
 }
