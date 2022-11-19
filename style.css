@@ -5,45 +5,24 @@
 }
 body {
 	text-align: center;
-	margin-top: 50%;
-	margin-bottom: -100%;
-	display: inline-block;
-	position: relative;
-	width: 20%;
-	vertical-align: middle;
-	overflow: hidden;
+	margin-top: 20%;
 }
 
-@keyframes walkanim {
-	to {
-		background-position: 100% 0;
-	}
-}
-
-#leg-left {
-	animation: leg-left 2s linear infinite;
+#wheel-front {
+	animation: wheel 1s ease;
 	transform-origin: center;
 	transform-box: fill-box;
 }
-
-#walking-dog-girl {
-	animation: walking-dog-girl 30s linear infinite;
+#wheel-back {
+	animation: wheel 1s ease;
+	transform-origin: center;
+	transform-box: fill-box;
 }
-
-/* @keyframes leg-left {
+@keyframes wheel {
 	from {
 		transform: rotateZ(0deg);
 	}
 	to {
-		transform: rotateZ(20deg);
-	}
-} */
-
-@keyframes walking-dog-girl {
-	from {
-		transform: translateX(-100%);
-	}
-	to {
-		transform: translateX(500%);
+		transform: rotateZ(360deg);
 	}
 }
